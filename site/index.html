@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101112">
+<meta name="description" content="ANGEL PC — игровые компьютеры и рабочие станции. Подбор конфигурации под ваши задачи.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="ANGEL PC — твой следующий уровень игры">
+<meta property="og:description" content="Игровые компьютеры и рабочие станции. Подбор конфигурации под ваши задачи.">
+<meta property="og:image" content="C:\Users\broni\Downloads\angel-pc-project_W_claude\background.png">
+<meta name="twitter:card" content="summary_large_image">
+<title>ANGEL PC — твой следующий уровень игры</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23101112'/%3E%3Ctext x='50' y='69' font-family='Arial,Helvetica,sans-serif' font-size='58' font-weight='800' fill='%23ff762b' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+<script src="legal/legal.js" defer></script>
+</head>
+<body>
+<header class="header"><div class="wrap header-inner">
+<a class="logo" href="#" aria-label="ANGEL PC — главная">ANGEL <span>PC</span></a>
+<nav id="navigation" aria-label="Основная навигация"><a href="#catalog">Каталог</a><a href="#selection">Подбор ПК</a><a href="#about">Как работаем</a><a href="#contacts">Контакты</a></nav>
+<a class="btn outline" href="#selection">Подобрать ПК ↗</a>
+<button class="menu" type="button" aria-controls="navigation" aria-expanded="false">Меню</button>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-content">
+<div class="eyebrow">Собираем под ваши задачи</div>
+<h1>Твой следующий <span>уровень игры.</span></h1>
+<p class="hero-copy">Игровые компьютеры с характером. Подберём конфигурацию под твои игры, работу и бюджет.</p>
+<a class="btn" href="#catalog">Выбрать компьютер <span aria-hidden="true">↗</span></a>
+<div class="benefits"><div class="benefit">Индивидуальная конфигурация</div><div class="benefit">Компьютеры и рабочие станции</div><div class="benefit">Помощь с выбором комплектующих</div></div>
+</div></section>
+<section class="section wrap" id="catalog">
+<div class="section-top"><div><div class="eyebrow">Демонстрационные сборки</div><h2>Выбери свою мощность</h2></div>
+<div class="filters" role="group" aria-label="Задачи компьютера"><button class="filter" type="button" data-filter="all" aria-pressed="true">Все ПК</button><button class="filter" type="button" data-filter="gaming" aria-pressed="false">Для игр</button><button class="filter" type="button" data-filter="work" aria-pressed="false">Для работы</button></div></div>
+<div class="cards" id="cards"></div>
+<noscript><p>Для просмотра демонстрационных сборок включите JavaScript. По вопросам подбора звоните +7 (499) 288-71-08.</p></noscript>
+<p class="muted small">Примеры конфигураций. Итоговую стоимость, комплектующие и наличие уточняйте при подборе.</p>
+</section>
+<section class="wrap" id="selection"><div class="picker">
+<div><div class="eyebrow">Персональный подбор</div><h2>Не знаешь,<br>что выбрать?</h2><p>Расскажи, для чего нужен компьютер. Начнём с подходящего класса сборки и обсудим детали.</p><p class="small">Подбор показывает ориентир среди демонстрационных конфигураций. Это не расчёт окончательной цены.</p></div>
+<form id="picker-form"><div class="field"><label for="purpose">Для чего нужен компьютер?</label><select id="purpose"><option value="gaming">Игры</option><option value="work">Монтаж, дизайн и работа</option><option value="both">Игры и работа</option></select></div>
+<div class="field"><div class="budget"><label for="budget">Мой бюджет</label><output id="budget-value" for="budget">150 000 ₽</output></div><input id="budget" type="range" min="50000" max="350000" step="10000" value="150000"><div class="budget muted small"><span>50 000 ₽</span><span>350 000 ₽</span></div></div>
+<button class="btn" type="submit">Показать вариант ↗</button><div id="selection-result" class="result" aria-live="polite"></div></form>
+</div></section>
+<section class="section wrap" id="about"><div class="eyebrow">От идеи до конфигурации</div><h2>Начнём с твоих задач</h2><div class="steps">
+<article class="step"><span>01 / ЗНАКОМСТВО</span><h3>Расскажи о планах</h3><p>Во что играешь, с какими программами работаешь и какой монитор используешь.</p></article>
+<article class="step"><span>02 / ПОДБОР</span><h3>Обсудим комплектующие</h3><p>Определим конфигурацию, внешний вид и возможности будущего обновления.</p></article>
+<article class="step"><span>03 / СОГЛАСОВАНИЕ</span><h3>Уточним детали заказа</h3><p>Стоимость, сроки, условия гарантии и способ получения согласуем до заказа.</p></article>
+</div></section>
+<section class="wrap contact" id="contacts"><div><h2>Соберём твой ANGEL PC?</h2><p>Москва. Встреча в магазине — по предварительной договорённости.</p><a href="tel:+74992887108">+7 (499) 288-71-08</a></div>
+<div class="contact-actions"><a class="btn" href="https://t.me/ANGELPC_msk_bot" target="_blank" rel="noopener noreferrer">Написать в Telegram ↗</a><a class="btn outline" href="https://www.avito.ru/brands/angelpc/all/nastolnye_kompyutery?sellerId=97b6c66aadd1e3c1144c07949cf78a86" target="_blank" rel="noopener noreferrer">Avito ↗</a></div></section>
+</main>
+<footer><div class="wrap footer-inner"><a class="logo" href="#">ANGEL <span>PC</span></a><p>Компьютер под твои задачи.</p><a class="small muted" href="https://telegram.me/ANGELPC_msk" target="_blank" rel="noopener noreferrer">Наш Telegram ↗</a><p>ИНН 772822966891 · ОГРНИП 324774600344806</p></div>
+<nav id="angel-legal-links" class="wrap" aria-label="Правовая информация"><a href="legal/privacy.html">Политика обработки персональных данных</a><a href="legal/terms.html">Пользовательское соглашение</a><a href="legal/cookies.html">Информация о cookies</a></nav>
+</footer>
+<dialog id="details" aria-labelledby="dialog-title"><div class="dialog-head"><h2 id="dialog-title"></h2><button class="close" type="button" aria-label="Закрыть">×</button></div><p class="muted small">Демонстрационная конфигурация. Состав и стоимость согласуются отдельно.</p><dl class="specs" id="dialog-specs"></dl><label for="request-text">Текст для обращения — можно дополнить</label><textarea id="request-text"></textarea><div class="actions"><button class="btn" id="copy" type="button">Скопировать текст</button><a class="btn outline" href="https://t.me/ANGELPC_msk_bot" target="_blank" rel="noopener noreferrer">Открыть Telegram ↗</a></div><p id="copy-status" role="status"></p><p class="small muted">Вставьте текст в чат и отправьте его самостоятельно.</p></dialog>
+</body></html>

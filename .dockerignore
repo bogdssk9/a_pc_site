@@ -1,0 +1,6 @@
+docs/
+README.md
+MANIFEST.sha256
+.git/
+.gitignore
+.DS_Store
